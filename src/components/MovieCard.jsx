@@ -1,5 +1,6 @@
 import React from "react";
 import Star from "./Star";
+import { Link } from "react-router-dom";
 
 const MovieCard = ({ movie }) => {
   return (
@@ -14,6 +15,7 @@ const MovieCard = ({ movie }) => {
         />
 
         <p className="card-text">{movie.description}</p>
+        <Link to={`/mouvies/${movie.id}`}>More Details</Link>
       </div>
     </div>
   );
